@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jagadeesh Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script>                        
+        // tab javascript
+        $( document ).ready(function() {
+            HideAll();
+            $(".tab-head-1").addClass("active");
+            $(".tab-content-1").show();
+            function HideAll(){
+                $(".tab-content-1").hide();
+                $(".tab-content-2").hide();
+                $(".tab-content-3").hide();
+                $("button").removeClass('active');
+            }  
+            $("button").click(function(){
+                HideAll();
+                let checkClass = $(this).attr("class");
+                if( checkClass == "tab-head-1"){
+                    $(".tab-content-1").show();
+                    $(this).addClass("active");
+                }
+                else
+                if(checkClass == "tab-head-2"){
+                    $(".tab-content-2").show();
+                    $(this).addClass("active");
+                }
+                else
+                if(checkClass == "tab-head-3"){
+                    $(".tab-content-3").show();
+                    $(this).addClass("active");
+                }
+            });                    
+        });
+    </script>
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#conact">Contact</a></li>
+             </ul>
+        
+        </nav>
+        <div class="header-text">
+            <p>Ui/Ux Designer</p>
+            <h1>Hi I'm <span>Jagadeesh</span> <br>  from AP</h1>
+        </div>
+    </div>
+</div>
+<!--------------about------------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Working as a Trainee Software Engineer since 2001 at Eficaa Ensmart Solutions PVT LTD.<br>
+                    Worked on UI/UX Design & Development,Created Web Site Designs using html5,css,Js,Angular.
+                    and having some basic knowledge in backend Development</p>
+                    
+                   
+                    <div class="tab-container">
+                        <button class="tab-head-1 active">Skills</button>
+                        <button class="tab-head-2">Experience</button>
+                        <button class="tab-head-3">Education</button>                        
+                        <div class="tab-content tab-content-1">
+                            <ul>
+                                <li><span>UI/UX</span> -- Designing web/App interfaces</li>
+                                <li><span>Web Development</span> -- web App Development</li>
+                                <li><span>App Development</span> -- Building Android/IOS apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content tab-content-2">
+                            <ul>
+                                <li>Experience in Web Desinging Tools</li>
+                                <li>Adobe Photoshop, Adobe Indesign, Adobe Illustrator</li>
+                                <li>HTML5, CSS3, Bootstrap, Javascript, Angular</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content tab-content-3">
+                            <ul>
+                                <li><span>2021-2024 </span> -- Currently Doing My Open MCA in PGRRCDE Under Osmania University </li>
+                                <li><span>2018-2021 </span> -- Bachulor's Degree in "MSCS"</li>
+                                <li><span>2016-2018</span> -- Intermediate</li>
+                                <li><span>2015-2016</span> -- 10 Standard</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                   
+                    
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------Services-------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web Design</h2>
+                <p>Responsive design, which ensures that websites look and function well across different devices and screen sizes, 
+                    is a crucial aspect of modern web design. This involves using techniques like flexible grids and media queries to 
+                    adapt the layout and content dynamically..</p>
+                    <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>UI/UX Design</h2>
+                <p>UX design, on the other hand, is concerned with the overall experience of the user when interacting with a digital 
+                    product. It involves understanding user behavior, needs, and preferences through research and analysis and using 
+                    that insight to optimize the design of the product. UX designers focus on creating a seamless and enjoyable user 
+                    journey by ensuring that the product is easy to use, efficient, and meets the user's goals and expectations.</p>
+                    <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>App Design</h2>
+                <p>UI design focuses on the visual aspects of the app, such as layout, typography, color scheme, and iconography. 
+                    It aims to create a visually cohesive and aesthetically pleasing interface that reflects the brand identity 
+                    and appeals to the target audience. UI designers also design interactive elements like buttons, navigation menus, 
+                    and forms to ensure that they are visually distinctive and easy to understand.</p>
+                    <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------Portfolio------->
+<div id="portfolio">
+<div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+        <div class="work">
+            <img src="images/work-1.png"  >
+            <div class="layer">
+                <h3>Social Media App</h3>
+                <p>The app connects you to the Talented People around the world.
+                    Download it from Play Store
+                </p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/work-2.png"  >
+            <div class="layer">
+                <h3>Music App</h3>
+                <p>The app connects you to the Talented People around the world.
+                    Download it from Play Store
+                </p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/work-3.png"  >
+            <div class="layer">
+                <h3>
+                    Online Shopping App
+                </h3>
+                <p>The app connects you to the Talented People around the world.
+                    Download it from Play Store
+                </p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn">See More</a>
+</div>
+</div>
+<!-----------Contact------>
+<div id="conact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1> 
+
+                <p>Contact@example.com</p>
+                <p>0123456789</p>
+                <a href="images/Jagadeesh-gopi-.Nandigam-Resume(s).pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet" >
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+              <span id="msg">Message Sent Successfully</span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @jagadeesh.</p>
+    </div>
+</div>
+
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxEMN6cbzL92TRdcLBgM5KV-gmfN0L2ot7QVeHIGKycPkE_8cqHwW7vZS8otQsxkIAnZw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
